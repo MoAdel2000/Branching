@@ -1,0 +1,29 @@
+		14 /2/ 2024			  4 شعبان 1445 ه
+- git stash -h
+- git help stash
+
+--------------------
+The ' git stash ' command is a powerful tool in Git for temporarily shelving your uncommitted changes and returning to a clean working directory. 
+
+----------------------------------
+# What it does:
+
+Stores the current state of your working directory (both tracked and staged changes) in a "stash" stack.
+Reverts your working directory to its state before the stash, leaving you with a clean workspace.
+
+
+----------------------------------
+# Common usage:
+
+- Basic stash: git stash: Saves your changes and restores the working directory.
+- Stash with message: git stash -m "<message>": Saves changes with a descriptive message for easier identification.
+- Listing stashes: ' git stash list ' : Shows a list of your stashes with information like commit hashes and messages.
+- Applying a stash: ' git stash apply <stash_id> ' : Reintegrates the specified stash back into your working directory.
+- Dropping a stash: ' git stash drop <stash_id> ' : Permanently removes the specified stash from the stack.
+
+----------------------------------
+# Additional options:
+
+- Keeping untracked files: git stash -u: Includes untracked files in the stash.
+- Stashing specific files: git stash -p: Lets you choose which files to stash.
+- Applying with conflicts: git stash apply -f: Forces application even if conflicts arise.
